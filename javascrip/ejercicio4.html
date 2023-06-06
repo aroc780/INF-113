@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>ejercicio04</title>
+    <script>
+        function fibo(){
+            let num = parseInt(prompt("Cuantos Fibonacci a Imprimir:",13));
+            let a = -1;
+            let b = 1;
+            let f = 0;
+            for(var i = 0; i < num; i++ ){
+                f = a + b;
+                document.write(f," ");
+                a = b;
+                b = f;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fibo()">Fibonacci</button> 
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio08</title>
+    <script>  
+var sumaApariciones = new Array(11).fill(0); 
+for (var i = 0; i < 1000; i++) {
+  var dado1 = Math.floor(Math.random() * 6) + 1; 
+  var dado2 = Math.floor(Math.random() * 6) + 1; 
+  var suma = dado1 + dado2;
+  sumaApariciones[suma - 2]++; 
+}
+for (var j = 0; j < sumaApariciones.length; j++) {
+  var suma = j + 2; 
+  var apariciones = sumaApariciones[j];
+  alert("Suma " + suma + " apareció " + apariciones + " veces");
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

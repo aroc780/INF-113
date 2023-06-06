@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <title>ejercicio03</title>
+    <script>
+        function esPrimo(numero) {
+            if (numero <= 1) {
+                return false;
+            }
+            for (var i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i === 0) {
+                return false;
+                }
+            }
+            return true;
+            }
+
+            function generarPrimos(n) {
+            var primos = [];
+            var numero = 2;
+            while (primos.length < n) {
+                if (esPrimo(numero)) {
+                primos.push(numero);
+                }
+                numero++;
+            }
+            return primos;
+        }
+
+        var n = parseInt(prompt("ingresa n: "))
+        var primerosPrimos = generarPrimos(n);
+        document.write("Los primeros " + n + " números primos son:");
+        document.write(primerosPrimos);
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
