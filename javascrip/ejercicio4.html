@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aprobación de Materias</title>
+    <script>
+        // Definir el Array asociativo con los datos de las materias
+        var materias = {
+            "Matemáticas": {
+                "asistencias": 8,
+                "promedio": 75,
+                "practicas_entregadas": 2
+            },
+            "Física": {
+                "asistencias": 9,
+                "promedio": 65,
+                "practicas_entregadas": 4
+            },
+            "Historia": {
+                "asistencias": 10,
+                "promedio": 45,
+                "practicas_entregadas": 3
+            }
+        };
+
+        // Función para determinar si se aprueba o no una materia
+        function aprobarMateria(asistencias, promedio, practicas_entregadas) {
+            var porcentaje_asistencias = (asistencias / 10) * 100;
+            var porcentaje_practicas = (practicas_entregadas / 3) * 100;
+
+            if (porcentaje_asistencias >= 90 && promedio > 51 && porcentaje_practicas >= 70) {
+                return "Aprobado";
+            } else {
+                return "Reprobado";
+            }
+        }
+
+        // Función para mostrar el resultado en el HTML
+        function mostrarResultado() {
+            var resultadoDiv = document.getElementById("resultado");
+
+            // Iterar sobre el Array de materias y determinar si se aprueba o no cada una
+            for (var materia in materias) {
+                if (materias.hasOwnProperty(materia)) {
+                    var datos = materias[materia];
+                    var asistencias = datos.asistencias;
+                    var promedio = datos.promedio;
+                    var practicas_entregadas = datos.practicas_entregadas;
+
+                    var resultado = aprobarMateria(asistencias, promedio, practicas_entregadas);
+
+                    resultadoDiv.innerHTML += "Materia: " + materia + " - Resultado: " + resultado + "<br>";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Aprobación de Materias</h1>
+    <div id="resultado"></div>
+
+    <script>
+        // Llamar a la función mostrarResultado al cargar la página
+        mostrarResultado();
+    </script>
+</body>
+</html>
