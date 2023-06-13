@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background-color: #146031;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    background-color: #14F9A6;
+}
+.text h2{
+
+}
+.img{
+    width: 350px;
+    height: 200px;
+}
+.text p{
+
+}
+.fotos{
+    background-color: red;
+    width: 70%;
+    display: felx;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.foto_img{
+
+
+}
+.foto_img img{
+
+}
+.foto_img h3{
+
+}
+.foto_img p{
+
+}
+
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6773AA;
+}
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    background-color: #737FB2;
+}
+form h2{
+    color: #14F9A6;
+    font-size: 25px;
+}
+.form_text{
+    display: flex;
+    justify-content: space-between;
+}
+.form_text a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.form_text a:hover{
+    color: #14F9A6;
+}
+.input-grup {
+    display: flex;
+    flex-direction: column;
+}
+input , textarea {
+    background-color: #818EC6;
+    padding: 20px 14px;
+    margin-bottom: 25px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+::placeholder {
+    color: #BFC9F3;
+    font-size: 15px;
+
+}
+:focus{
+    outline: 1px solid #14F9A6;
+
+}
+.btn {
+    background-color: #14F9A6;
+    color: #146031;
+    font-size: 17px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #14F9A6;
+}
+@media(max-width:991px){
+    .formulario{
+        padding: 30px;
+    }
+    form {
+        width: 100%;
+    }
+} 
+    
+
