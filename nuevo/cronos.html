@@ -16,8 +16,8 @@
         <nav class="navbar">
             <a href="#" class="activo">Inicio</a>
             <a href="#formulario">Contacto</a>
-            <a href="#">Noticias</a>
-            <a href="simulacion.html">simulacion</a>
+            <a href="https://www.eitb.eus/es/tag/nasa/" target="_blank">Noticias</a>
+            <a href="simulacion.html">Simulacion</a>
         </nav>
     </header>
     
@@ -80,7 +80,7 @@
 
     </section>
     <section class="formulario" id="formulario">
-        <form autocomplete="off">
+        <form action="https://formsubmit.co/aroc780@gmail.com" method="POST" autocomplete="off">
             <h2 class="form_title">Contacto</h2>
             <div class="form_text">
                 <a href="#">Politica de privacidad</a>
@@ -92,6 +92,8 @@
                 <input type="email" name="email" placeholder="Email">
                 <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
                 <input class="btn" type="submit" value="Enviar">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/nuevo/cronos.html"
+                <input type="hidden" name="_captcha" value="false"
             </div>
 
         </form>
@@ -113,6 +115,9 @@
        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

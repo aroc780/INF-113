@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
-:root{
-    --primary:#fdfdfd;
-    --white: #030303;
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -172,14 +169,9 @@ body{
 
     }
 
-@media (max-width: 768px){
-    .header{
-        background: black;}
-    }
-    #menu-icon{
-        display: block;
 
-    }
+
+    
 
     .formulario{
         font-family: Arial, Helvetica, sans-serif;
@@ -267,15 +259,15 @@ body{
         height: 5rem;
         width: 5rem;
         line-height: 5rem;
-        color: var(--primary);
-        border: .1rem solid var(--primary);
+        color: #fdfdfd;
+        border: .1rem solid #fdfdfd;;
         margin: .3rem;
         border-radius: 50%;
     }
     
     .footer .share a:hover{
-        color: var(--white);
-        background: var(--primary);
+        color: #030303;
+        background: #fdfdfd;
         transform: rotate(360deg);
     }
     
@@ -290,5 +282,6 @@ body{
     }
     
     .footer .credit span{
-        color: var(--primary);
+        color: #fdfdfd;
     }
+    
